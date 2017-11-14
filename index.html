@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <title>Fair Share</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
-<body>
+<body background="#">
+
+<div class="menunav" id="myMenunav">
+    <a href="#home" class="logo">Home</a>
+    <a href="#news" class="annonce">Opret annonce</a>
+    <a href="#contact" class="kontakt">Kontakt</a>
+    <a href="#about" class="bruger">Opret bruger</a>
+    <a href="#about" class="login">Login</a>
+    <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="søgefeltforside">
+    <input type="text" id="søgefelt" placeholder="Søg på fx. postnr. ell. produkt..." autofocus>
+    <input type="button" value="Søg">
+</div>
+
+<div class="kategorier">
+
+</div>
+
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myMenunav");
+        if (x.className === "menunav") {
+            x.className += " responsive";
+        } else {
+            x.className = "menunav";
+        }
+    }
+</script>
 
 </body>
 </html>
