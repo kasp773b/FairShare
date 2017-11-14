@@ -1,17 +1,27 @@
 
+
 body {
   margin: 20px 0 0 0;
+  background-image: url("http://www.jonasbonde.dk/wp-content/uploads/2017/11/solopgang.baggrund.hvid_.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .menunav {
   overflow: hidden;
-  background-color: #fff;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   .logo{
     order: 3;
-    flex-grow: 100;
+    flex-grow: 3;
+    img{
+      width: 50%
+    }
   }
   .annonce{
     order: 1;
@@ -46,7 +56,7 @@ body {
 }
 
 .menunav a:hover {
-  background-color: #ddd;
+  background-color: #fff;
   color: black;
 }
 
@@ -61,6 +71,60 @@ body {
   padding:12px 12px 0 0;
   margin-top: -10px;
 }
+
+
+.forsidesog{
+
+}
+
+.søgefeltforside {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  #søgefelt {
+    width: 50%;
+    font-size: 13px;
+    padding: 12px 20px 12px 10px;
+    border: 2px solid #ddd;
+    height: 22px;
+    margin: 0;
+  }
+  input[type=button]{
+    background-color: #4CAF50;
+    border: 0;
+    font-size: 13px;
+    padding: 14px 20px 14px 20px;
+    margin: 0;
+    height: 48px;
+  }
+}
+
+
+.kategori_punkt{
+  display: flex;
+  text-align: center;
+  margin: 0 30px;
+  position: relative;
+}
+.kategori_liste{
+  font-size: 12px;
+  padding: 20px 0px 15px 0px;
+  -webkit-padding-start: 0 !important;
+  -webkit-padding-end: 0 !important;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: fixed;
+  bottom: 0;
+  background-color: yellow;
+  margin: auto;
+}
+
+
+
 
 @media screen and (max-width: 600px) {
   body{
@@ -94,25 +158,8 @@ body {
   }
 }
 
-.søgefeltforside {
-  margin-top: 70%;
-  text-align: center;
-  #søgefelt {
-    width: 50%;
-    font-size: 13px;
-    padding: 12px 20px 12px 10px;
-    border: 2px solid #ddd;
-    height: 22px;
-    margin: 0;
-  }
-  input[type=button]{
-    background-color: #4CAF50;
-    border: 0;
-    font-size: 13px;
-    padding: 14px 20px 14px 20px;
-    margin: 0;
-    height: 48px;
-  }
-  background-image{
+@media screen and (min-width: 740px) {
+  .kategori_liste{
+    justify-content: center;
   }
 }
