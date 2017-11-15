@@ -3,15 +3,20 @@ h1{
   padding: 0 0 0 10px;
 }
 
+// Styler Body på alle sider
 body {
   margin: 20px 0 0 0;
+  // Baggrundbillede på alle sider
   background-image: url("http://www.jonasbonde.dk/wp-content/uploads/2017/11/solopgang.baggrund.hvid_.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  // Gør billedet tilpasses i højden
   background-size: cover;
 }
 
+
+// styler header og nav-bar
 .menunav {
   overflow: hidden;
   background-color: transparent;
@@ -19,13 +24,16 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  // STYLER MENU PUNKTER
   .logo{
     order: 3;
     flex-grow: 3;
+    //STYLER LOGO
     img{
       width: 50%
     }
   }
+  // styler annonce knap!
   .annonce{
     order: 1;
     flex-grow: 1;
@@ -48,6 +56,7 @@ body {
   margin: auto;
 }
 
+// Styler menu links
 .menunav a {
   display: block;
   color: #333;
@@ -57,17 +66,18 @@ body {
   font-size: 17px;
   font-family: "Acumin Pro";
 }
-
 .menunav a:hover {
   background-color: #fff;
   color: black;
 }
 
+//Aktiv menu punkt
 .activemenunav {
   background-color: #4CAF50;
   color: white;
 }
 
+//Menu ikon på burgermenu
 .menunav .icon {
   display: none;
   height: 30px;
@@ -75,11 +85,10 @@ body {
   margin-top: -10px;
 }
 
-
+//Søgefelt på forsiden
 .forsidesog{
 
 }
-
 .søgefeltforside {
   display: flex;
   justify-content: center;
@@ -102,13 +111,16 @@ body {
   }
 }
 
+// Styler slider med kategorier i bunden
 
+//Styler de enkelte div's med en kategori i
 .kategori_punkt{
   display: flex;
   text-align: center;
   margin: 0 30px;
   position: relative;
 }
+//Styler hele listen med kategorier
 .kategori_liste{
   font-size: 12px;
   padding: 20px 0px 15px 0px;
@@ -128,12 +140,14 @@ body {
 
 
 
-
+// GÆLDER KUN POÅ MOBIL
 @media screen and (max-width: 600px) {
   body{
     margin: 0;
   }
+  //STYLER BURGERMENU PÅ MOBIL
   .menunav a:not(:first-child) {display: none;}
+  //MENU IKON
   .menunav a.icon {
     float: right;
     display: block;
@@ -161,26 +175,7 @@ body {
   }
 }
 
-.søgefeltforside {
-  margin-top: 70%;
-  text-align: center;
-  #søgefelt {
-    width: 50%;
-    font-size: 13px;
-    padding: 12px 20px 12px 10px;
-    border: 2px solid #ddd;
-    height: 22px;
-    margin: 0;
-  }
-  input[type=button]{
-    background-color: #4CAF50;
-    border: 0;
-    font-size: 13px;
-    padding: 14px 20px 14px 20px;
-    margin: 0;
-    height: 48px;
-  }
-}
+
 
 .form {
   p {

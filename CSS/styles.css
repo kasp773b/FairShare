@@ -136,24 +136,6 @@ body {
   .menunav {
     display: block;
     width: 100%; } }
-.søgefeltforside {
-  margin-top: 70%;
-  text-align: center; }
-  .søgefeltforside #søgefelt {
-    width: 50%;
-    font-size: 13px;
-    padding: 12px 20px 12px 10px;
-    border: 2px solid #ddd;
-    height: 22px;
-    margin: 0; }
-  .søgefeltforside input[type=button] {
-    background-color: #4CAF50;
-    border: 0;
-    font-size: 13px;
-    padding: 14px 20px 14px 20px;
-    margin: 0;
-    height: 48px; }
-
 .form {
   padding: 0 15px 25px 10px; }
   .form p {
