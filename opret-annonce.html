@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opret Annonce</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+<body background="#">
+
+<div class="menunav" id="myMenunav">
+    <a href="#home" class="logo">Home</a>
+    <a href="#news" class="activemenunav" class="annonce">Opret annonce</a>
+    <a href="#contact" class="kontakt">Kontakt</a>
+    <a href="#about" class="bruger">Opret bruger</a>
+    <a href="#about" class="login">Login</a>
+    <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<h1>Opret en søgeannonce</h1>
+
+<section class="form GsecForm">
+    <form>
+        <p>Jeg leder efter</p>
+        <input type="text" class="annonce-input">
+        <p>Ca. pris pr. dag</p>
+        <input type="text" class="annonce-input">
+        <p>Låneperiode</p>
+        <input type="text" class="annonce-input">
+        <p>By / område</p>
+        <input type="text" class="annonce-input">
+        <p>Afhentning</p>
+        <input type="text" class="annonce-input">
+        <p>Beskrivelse</p>
+        <textarea class="annonce-textarea"></textarea>
+        <input type="submit" value="Opret annonce" class="annonce-button">
+    </form>
+</section>
+
+<footer></footer>
+
+
+<!--JAVASCRIPT TIL BURGERMENU-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myMenunav");
+        if (x.className === "menunav") {
+            x.className += " responsive";
+        } else {
+            x.className = "menunav";
+        }
+    }
+</script>
+
+</body>
+</html>
