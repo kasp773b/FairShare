@@ -189,6 +189,14 @@ body {
   padding: 0 15px 25px 10px;
 }
 
+// Gælder kun for 740 px+
+// CENTRERER KATEGORI SLIDER I BUNDEN, NÅR SKÆRMEN BLIVER BRED NOK TIL AT VISE DET HELE
+@media screen and (min-width: 740px) {
+  .kategori_liste {
+    justify-content: center;
+  }
+}
+
 //Styrer bredden på tekstfelter.
 .annonce-input{
   width: 100%;

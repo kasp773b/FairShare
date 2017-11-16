@@ -141,6 +141,9 @@ body {
   .formular p {
     margin-bottom: 0; }
 
+@media screen and (min-width: 740px) {
+  .kategori_liste {
+    justify-content: center; } }
 .annonce-input {
   width: 100%; }
 
