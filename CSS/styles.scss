@@ -74,8 +74,7 @@ body {
 }
 
 .menunav a:hover {
-  background-color: #fff;
-  color: black;
+  color: #b7b7b7;
 }
 
 //Aktiv menu punkt
@@ -198,7 +197,28 @@ body {
 }
 
 
-
+//STYLING FOR GENSTANDS SIDE
+.produktfoto{
+  background-color: white;
+  padding: 16px;
+  margin: 16px;
+  font-family: "Acumin Pro";
+  h2{
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .produktikoner{
+    img{
+      margin: 16px 16px 0 0;
+      height: 50px;
+      width: auto;
+    }
+  }
+}
 
 
 

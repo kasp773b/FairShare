@@ -54,8 +54,7 @@ body {
   font-family: "Acumin Pro"; }
 
 .menunav a:hover {
-  background-color: #fff;
-  color: black; }
+  color: #b7b7b7; }
 
 .activemenunav {
   background-color: #4CAF50;
@@ -155,6 +154,22 @@ body {
   .menunav {
     display: block;
     width: 100%; } }
+.produktfoto {
+  background-color: white;
+  padding: 16px;
+  margin: 16px;
+  font-family: "Acumin Pro"; }
+  .produktfoto h2 {
+    margin-top: 0;
+    margin-bottom: 16px; }
+  .produktfoto img {
+    width: 100%;
+    height: auto; }
+  .produktfoto .produktikoner img {
+    margin: 16px 16px 0 0;
+    height: 50px;
+    width: auto; }
+
 .formular {
   padding: 0 15px 25px 10px; }
   .formular p {
