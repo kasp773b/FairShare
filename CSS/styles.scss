@@ -363,6 +363,10 @@ form{
     border-width: 2px;
     border-color: #173c6f;
     border-style: solid;
+    height: 20px;
+  }
+  input[type=date]{
+    height: 22px;
   }
 }
 
@@ -407,8 +411,13 @@ footer{
   background-color: #173c6f;
   width: 100%;
   color: white;
+  .footerindhold{
+    padding: 16px 15%;
+  }
   img{
-    height: 200px;
+    display: flex;
+    height: 150px;
+    margin: auto;
   }
 }
 
@@ -457,9 +466,15 @@ footer{
 }
 .Fsec2{
   grid-area: GFsec2;
+  margin-top: 1.5px;
 }
 .Fsec3{
   grid-area: GFsec3;
+  display: flex;
+  justify-content: space-between;
+  .GFsec31, .GFsec32{
+    width: 48%;
+  }
 }
 .Fsec4{
   grid-area: GFsec4;
@@ -542,7 +557,7 @@ footer{
 
 .items{
   padding: 0 0 15px 0;
-  margin: 0 8px 20px 8px;
+  margin: 0 8px 16px 8px;
   background-color: #f2f2f2;
 
 }
@@ -550,6 +565,14 @@ footer{
 
 //Styrer regler gældende for tablets.
 @media screen and (min-width: 740px) {
+
+  .footerindhold{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px!important;
+    max-width: 800px;
+    margin:auto;
+  }
 
      .menunav{
        width: 90%;
@@ -559,7 +582,14 @@ footer{
      }
   //Styrer padding på "Opret annonce" side.
   .sec-annonce{
-    padding: 0 120px 25px 120px;
+    width: 90%;
+    margin:auto;
+    h1{
+      padding: 0;
+    }
+    .sec-annonce-indhold{
+      width: 60%;
+    }
   }
 
   //Styrer grid på annonce-side
@@ -575,10 +605,6 @@ footer{
             "GFsec6 GFsec6"
             "GFsec7 GFsec7";
   }
-  h1{
-    padding: 0 0 0 125px;
-  }
-
 .soge-resultater{
   margin: 0 16px;
 
@@ -623,6 +649,7 @@ footer{
 
       .menunav{
           width: 70%;
+        max-width: 1300px;
           img{
             width: 35% !important;
           }
@@ -633,19 +660,27 @@ footer{
     max-width: 1300px;
     margin: auto;
   }
-
-  h1 {
-    padding: 0 0 0 240px;
-  }
+  .sec-annonce{
+    padding-bottom: 25px;
+      width: 70%;
+      margin:auto;
+      h1{
+        padding: 0;
+      }
+      .sec-annonce-indhold{
+        width: 60%;
+      }
+    }
+  
 
   //Styrer padding på "Opret annonce" side.
   .formular {
-    padding: 0 70px 25px 120px;
+    padding: 0;
 
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
     grid-column-gap: 20px;
-    grid-template-areas: "GFsec1 GFsec1 . ." "GFsec2 GFsec3 . ." "GFsec4 GFsec5 . ." "GFsec6 GFsec6 . ." "GFsec7 GFsec7 . .";
+    grid-template-areas: "GFsec1 GFsec1" "GFsec2 GFsec3" "GFsec4 GFsec5" "GFsec6 GFsec6" "GFsec7 GFsec7";
   }
   .forsidesog {
     height: 55%;
@@ -677,6 +712,7 @@ footer{
         grid-area: Sec4;
         margin-left: 8px;
         margin-right: 16px;
+        text-align: center;
       }
     }
 

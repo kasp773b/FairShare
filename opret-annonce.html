@@ -22,10 +22,12 @@
 </div>
 
 <!--TITEL-->
-<h1>Opret en søgeannonce</h1>
+
 
 <!--ANNONCE FORMULAR-->
 <section class="sec-annonce">
+    <div class="sec-annonce-indhold">
+    <h1>Opret en søgeannonce</h1>
     <form class="formular">
         <div class="Fsec1 GFsec1">
             <p>Jeg leder efter</p>
@@ -36,8 +38,14 @@
             <input type="text" class="annonce-input">
         </div>
         <div class="Fsec3 GFsec3">
-            <p>Låneperiode</p>
-            <input type="text" class="annonce-input">
+            <div class="GFsec31">
+                <p>Start dato</p>
+                <input type="date" class="annonce-input">
+            </div>
+            <div class="GFsec32">
+                <p>Slut dato</p>
+                <input type="date" class="annonce-input">
+            </div>
         </div>
         <div class="Fsec4 GFsec4">
             <p>By / område</p>
@@ -55,9 +63,39 @@
             <input type="button" value="Opret annonce" class="annonce-button">
         </div>
     </form>
+    </div>
 </section>
 
-<footer></footer>
+<footer>
+    <div class="footerindhold">
+        <div class="rekkeet">
+            <a href="index.html"><img src="images/fairshare.logo.png" alt="logo"></a>
+        </div>
+        <div class="rekketo">
+            <strong>FairShare</strong></br> </br>
+            Bispegade 5</br>
+            4800 Nykøbing Falster</br>
+            +45 12345678</br>
+            mail@fairshare.dk</br></br>
+            </p>
+        </div>
+        <div class="rekketre">
+            <strong>Generelt</strong></br> </br>
+            Om FairShare</br>
+            Vilkår og betingelser</br>
+            Kontrakter</br></br>
+            </p>
+        </div>
+        <div class="rekkefire">
+            <strong>Support</strong></br> </br>
+            Opret bruger</br>
+            Login</br>
+            Kontakt</br>
+            FAQ</br></br>
+            </p>
+        </div>
+    </div>
+</footer>
 
 
 <!--JAVASCRIPT TIL BURGERMENU-->
