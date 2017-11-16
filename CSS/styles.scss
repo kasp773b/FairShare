@@ -126,6 +126,9 @@ h1{
 // Styler slider med kategorier i bunden
 
 //Styler de enkelte div's med en kategori i
+.kategorier{
+}
+
 .kategori_punkt{
   display: flex;
   text-align: center;
@@ -141,7 +144,7 @@ h1{
 //Styler hele listen med kategorier
 .kategori_liste{
   font-size: 12px;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 10px 0px;
   -webkit-padding-start: 0 !important;
   -webkit-padding-end: 0 !important;
   flex-direction: row;
@@ -151,7 +154,7 @@ h1{
   overflow: hidden;
   overflow-x: scroll;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   background-color: #173c6f;
   margin: auto;
   img{
@@ -159,6 +162,20 @@ h1{
   }
 }
 
+.sliderpil{
+  position: fixed;
+  bottom: 0;
+  background-color: #173c6f;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  height: 20px;
+  width: 100%;
+  img{
+    height: 75%;
+    width: auto;
+  }
+}
 
 
 // GÆLDER KUN POÅ MOBIL
@@ -236,6 +253,9 @@ h1{
 @media screen and (min-width: 1250px) {
   .kategori_liste {
     justify-content: center;
+  }
+  .sliderpil{
+    display: none;
   }
 }
 
