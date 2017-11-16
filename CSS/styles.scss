@@ -1,6 +1,7 @@
 
 html, body{
   height: 100%;
+  margin: 0;
 }
 
 h1{
@@ -9,7 +10,7 @@ h1{
 }
 
 // Styler Body på alle sider
-body {
+.bodyforside {
   margin: 0;
   // Baggrundbillede på alle sider
   background-image: url("http://www.jonasbonde.dk/wp-content/uploads/2017/11/baggrund.jpg");

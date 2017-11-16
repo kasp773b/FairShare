@@ -1,12 +1,13 @@
 @charset "UTF-8";
 html, body {
-  height: 100%; }
+  height: 100%;
+  margin: 0; }
 
 h1 {
   font-size: 2em;
   padding: 0 0 0 10px; }
 
-body {
+.bodyforside {
   margin: 0;
   background-image: url("http://www.jonasbonde.dk/wp-content/uploads/2017/11/baggrund.jpg");
   background-position: center;
