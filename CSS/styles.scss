@@ -32,6 +32,11 @@ button{
   background-size: cover;
 }
 
+//Gør skrift i menu sort på forsiden
+.menuforside a{
+  color: black !important;
+}
+
 // styler header og nav-bar
 .menunav {
   overflow: hidden;
@@ -50,7 +55,7 @@ button{
       width: 100%
     }
   }
- 
+
   // styler annonce knap!
   .annonce{
     order: 1;
@@ -74,9 +79,9 @@ button{
   margin: auto;
 }
 
-.menu-header{                
-  background-color: #173c6f; 
-}                            
+.menu-header{
+  background-color: #173c6f;
+}
 
 // Styler menu links
 .menunav a {
@@ -336,14 +341,14 @@ footer{
   width: 300px;
 }
 
-                                  
-//Styrer form elementer.          
-.formular {                       
-  p {                             
-    margin-bottom: 0;             
-  }                               
-  padding: 0 15px 25px 10px;      
-}                                 
+
+//Styrer form elementer.
+.formular {
+  p {
+    margin-bottom: 0;
+  }
+  padding: 0 15px 25px 10px;
+}
 
 //Definere grid på annonce-side
 .Fsec1{
@@ -423,13 +428,13 @@ footer{
   p{
     padding: 0 0 0 15px;
   }
-  
+
   button{
     display: flex;
     justify-content: center;
     margin: auto;
     width: 50%;
-   
+
   }
 }
 
@@ -437,7 +442,7 @@ footer{
   padding: 0 0 15px 0;
   margin-bottom: 20px;
   background-color: #f2f2f2;
- 
+
 }
 
 
@@ -455,7 +460,7 @@ footer{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 20px;
-    
+
     grid-template-areas:
             "GFsec1 GFsec1"
             "GFsec2 GFsec3"
@@ -466,16 +471,16 @@ footer{
   h1{
     padding: 0 0 0 125px;
   }
-  
+
 .soge-resultater{
   padding: 0 80px 0 40px;
 
   grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
-  grid-template-areas:                 
+  grid-template-areas:
           "Gvis-resultat Gvisresultat Gvisresultat Gvisresultat"
           "Gitem1 Gitem2 Gitem3 Gitem4"
           "Gitem5 Gitem6 Gitem7 Gitem8"
-}                                        
+}
 
 
 }
@@ -486,7 +491,7 @@ footer{
   .soge-resultater {
     padding: 0 200px 0 150px;
   }
-  
+
   h1 {
     padding: 0 0 0 240px;
   }

@@ -25,6 +25,9 @@ button {
   background-attachment: fixed;
   background-size: cover; }
 
+.menuforside a {
+  color: black !important; }
+
 .menunav {
   overflow: hidden;
   background-color: transparent;
