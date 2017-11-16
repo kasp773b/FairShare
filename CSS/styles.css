@@ -43,8 +43,8 @@ button {
   .menunav .annonce {
     order: 1;
     flex-grow: 1;
-    background-color: yellow;
-    border-radius: 5px; }
+    background-color: darkred;
+    border-radius: 0; }
   .menunav .kontakt {
     order: 2;
     flex-grow: 1; }
@@ -55,9 +55,12 @@ button {
     order: 5;
     flex-grow: 1; }
 
+.menu-header {
+  background-color: #173c6f; }
+
 .menunav a {
   display: block;
-  color: #333;
+  color: #ffffff;
   text-align: center;
   padding: 20px 16px 14px 16px;
   text-decoration: none;
@@ -226,7 +229,7 @@ button {
   padding: 14px 20px 14px 20px; }
 
 footer {
-  background-color: #f2f2f2;
+  background-color: #173c6f;
   height: 105px;
   width: 100%; }
 
@@ -234,7 +237,8 @@ footer {
   display: flex;
   height: 5%;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 50px; }
 
 .søgefeltresultater {
   display: flex;
@@ -329,6 +333,7 @@ footer {
   .formular {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
     grid-template-areas: "GFsec1 GFsec1" "GFsec2 GFsec3" "GFsec4 GFsec5" "GFsec6 GFsec6" "GFsec7 GFsec7"; }
 
   h1 {

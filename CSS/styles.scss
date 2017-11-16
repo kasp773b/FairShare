@@ -32,7 +32,6 @@ button{
   background-size: cover;
 }
 
-
 // styler header og nav-bar
 .menunav {
   overflow: hidden;
@@ -51,12 +50,13 @@ button{
       width: 100%
     }
   }
+ 
   // styler annonce knap!
   .annonce{
     order: 1;
     flex-grow: 1;
-    background-color: yellow;
-    border-radius: 5px;
+    background-color: darkred;
+    border-radius: 0;
   }
   .kontakt{
     order: 2;
@@ -74,10 +74,14 @@ button{
   margin: auto;
 }
 
+.menu-header{                
+  background-color: #173c6f; 
+}                            
+
 // Styler menu links
 .menunav a {
   display: block;
-  color: #333;
+  color: #ffffff;
   text-align: center;
   padding: 20px 16px 14px 16px;
   text-decoration: none;
@@ -301,7 +305,7 @@ button{
 
 //Styrer footer.
 footer{
-  background-color: #f2f2f2;
+  background-color: #173c6f;
   height: 105px;
   width: 100%;
 }
@@ -311,6 +315,7 @@ footer{
   height: 5%;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .søgefeltresultater {
   display: flex;
@@ -449,7 +454,7 @@ footer{
   .formular{
     display: grid;
     grid-template-columns: 50% 50%;
-    //grid-column-gap: 2%;
+    grid-column-gap: 20px;
     
     grid-template-areas:
             "GFsec1 GFsec1"
