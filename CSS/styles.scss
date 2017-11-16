@@ -9,6 +9,17 @@ h1{
   padding: 0 0 0 10px;
 }
 
+button{
+  background-color: #173c6f;
+  color: white;
+  border: 0;
+  border-radius: 0px;
+  font-size: 13px;
+  padding: 14px 20px 14px 20px;
+  margin: 0;
+  height: 50px;
+}
+
 // Styler Body på alle sider
 .bodyforside {
   margin: 0;
@@ -239,14 +250,10 @@ h1{
 }
 
 
-
-//Styrer form elementer.
-.formular {
-  p {
-    margin-bottom: 0;
-  }
-  padding: 0 15px 25px 10px;
+.soge-resultater{
+  padding: 0 45px 0 25px;
 }
+
 
 // Gælder kun for 1250 px+
 // CENTRERER KATEGORI SLIDER I BUNDEN, NÅR SKÆRMEN BLIVER BRED NOK TIL AT VISE DET HELE
@@ -281,7 +288,16 @@ h1{
   border: none;
   width: 200px;
   height: 50px;
+
+
+  background-color: #173c6f;
+  color: white;
+  border: 0;
+  border-radius: 0px;
+  font-size: 13px;
+  padding: 14px 20px 14px 20px;
 }
+
 
 //Styrer footer.
 footer{
@@ -290,7 +306,41 @@ footer{
   width: 100%;
 }
 
+.resultatersog{
+  display: flex;
+  height: 5%;
+  align-items: center;
+  justify-content: center;
+}
+.søgefeltresultater {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  .søgefelt {
+    width: 12rem;
+    font-size: 13px;
+    padding: 12px 20px 12px 10px;
+    border: 2px solid #173c6f;
+    height: 22px;
+    margin: 0;
+  }
+}
 
+//Styrer bredden på søgefelt på resultatside.
+.resultater-sogefelt{
+  width: 300px;
+}
+
+                                  
+//Styrer form elementer.          
+.formular {                       
+  p {                             
+    margin-bottom: 0;             
+  }                               
+  padding: 0 15px 25px 10px;      
+}                                 
+
+//Definere grid på annonce-side
 .Fsec1{
   grid-area: GFsec1;
 }
@@ -313,59 +363,142 @@ footer{
   grid-area: GFsec7;
 }
 
+//Definere grid på resultater side.
+.item1{
+  grid-area: Gitem1;
+}
+
+.item2{
+  grid-area: Gitem2;
+}
+
+.item3{
+  grid-area: Gitem3;
+}
+
+.item4{
+  grid-area: Gitem4;
+}
+
+.item5{
+  grid-area: Gitem5;
+}
+
+.item6{
+  grid-area: Gitem6;
+}
+
+.item7{
+  grid-area: Gitem7;
+}
+
+.item8{
+  grid-area: Gitem8;
+}
+
+.soge-resultater{
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 20px;
+  grid-template-areas:
+          "Gvis-resultat Gvisresultat"
+          "Gitem1 Gitem2"
+          "Gitem3 Gitem4"
+          "Gitem5 Gitem6"
+          "Gitem7 Gitem8";
+}
+
+.item-tekst{
+
+  h4{
+    padding: 0 0 0 15px;
+  }
+
+  p{
+    padding: 0 0 0 15px;
+  }
+  
+  button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+   
+  }
+}
+
+.items{
+  padding: 0 0 15px 0;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+ 
+}
+
+
 //Styrer regler gældende for tablets.
 @media screen and (min-width: 740px) {
 
-  //Styrer padding på "Opret annonce" side.
-  .formular{
-    padding: 0 70px 25px 60px;
 
+  //Styrer padding på "Opret annonce" side.
+  .sec-annonce{
+    padding: 0 120px 25px 120px;
+  }
+
+  //Styrer grid på annonce-side
+  .formular{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-column-gap: 20px;
+    //grid-column-gap: 2%;
+    
     grid-template-areas:
             "GFsec1 GFsec1"
             "GFsec2 GFsec3"
             "GFsec4 GFsec5"
             "GFsec6 GFsec6"
-            "GFsec7 GFSec7";
+            "GFsec7 GFsec7";
   }
   h1{
-    padding: 0 0 0 60px;
+    padding: 0 0 0 125px;
   }
-  .forsidesog{
-    height: 70%;
-  }
-  .søgefeltforside #søgefelt{
-    width: 25rem;
-  }
+  
+.soge-resultater{
+  padding: 0 80px 0 40px;
+
+  grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+  grid-template-areas:                 
+          "Gvis-resultat Gvisresultat Gvisresultat Gvisresultat"
+          "Gitem1 Gitem2 Gitem3 Gitem4"
+          "Gitem5 Gitem6 Gitem7 Gitem8"
+}                                        
+
+
 }
 
 //Styrer regler gældende for web.
 @media screen and (min-width: 1100px) {
 
-  h1{
-    padding: 0 0 0 120px;
+  .soge-resultater {
+    padding: 0 200px 0 150px;
+  }
+  
+  h1 {
+    padding: 0 0 0 240px;
   }
 
   //Styrer padding på "Opret annonce" side.
-  .formular{
+  .formular {
     padding: 0 70px 25px 120px;
 
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-column-gap: 20px;
-    grid-template-areas:
-            "GFsec1 GFsec1 . ."
-            "GFsec2 GFsec3 . ."
-            "GFsec4 GFsec5 . ."
-            "GFsec6 GFsec6 . ."
-            "GFsec7 GFSec7 . .";
+    grid-template-areas: "GFsec1 GFsec1 . ." "GFsec2 GFsec3 . ." "GFsec4 GFsec5 . ." "GFsec6 GFsec6 . ." "GFsec7 GFsec7 . .";
   }
-  .menunav .logo img{
+  .menunav .logo img {
     width: 50%;
   }
-  .forsidesog{
+  .forsidesog {
     height: 55%;
   }
 }

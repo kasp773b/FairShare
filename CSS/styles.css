@@ -7,6 +7,16 @@ h1 {
   font-size: 2em;
   padding: 0 0 0 10px; }
 
+button {
+  background-color: #173c6f;
+  color: white;
+  border: 0;
+  border-radius: 0px;
+  font-size: 13px;
+  padding: 14px 20px 14px 20px;
+  margin: 0;
+  height: 50px; }
+
 .bodyforside {
   margin: 0;
   background-image: url("http://www.jonasbonde.dk/wp-content/uploads/2017/11/baggrund.jpg");
@@ -184,10 +194,8 @@ h1 {
     height: 50px;
     width: auto; }
 
-.formular {
-  padding: 0 15px 25px 10px; }
-  .formular p {
-    margin-bottom: 0; }
+.soge-resultater {
+  padding: 0 45px 0 25px; }
 
 @media screen and (min-width: 1250px) {
   .kategori_liste {
@@ -209,12 +217,44 @@ h1 {
   justify-content: center;
   border: none;
   width: 200px;
-  height: 50px; }
+  height: 50px;
+  background-color: #173c6f;
+  color: white;
+  border: 0;
+  border-radius: 0px;
+  font-size: 13px;
+  padding: 14px 20px 14px 20px; }
 
 footer {
   background-color: #f2f2f2;
   height: 105px;
   width: 100%; }
+
+.resultatersog {
+  display: flex;
+  height: 5%;
+  align-items: center;
+  justify-content: center; }
+
+.søgefeltresultater {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .søgefeltresultater .søgefelt {
+    width: 12rem;
+    font-size: 13px;
+    padding: 12px 20px 12px 10px;
+    border: 2px solid #173c6f;
+    height: 22px;
+    margin: 0; }
+
+.resultater-sogefelt {
+  width: 300px; }
+
+.formular {
+  padding: 0 15px 25px 10px; }
+  .formular p {
+    margin-bottom: 0; }
 
 .Fsec1 {
   grid-area: GFsec1; }
@@ -237,32 +277,80 @@ footer {
 .Fsec7 {
   grid-area: GFsec7; }
 
+.item1 {
+  grid-area: Gitem1; }
+
+.item2 {
+  grid-area: Gitem2; }
+
+.item3 {
+  grid-area: Gitem3; }
+
+.item4 {
+  grid-area: Gitem4; }
+
+.item5 {
+  grid-area: Gitem5; }
+
+.item6 {
+  grid-area: Gitem6; }
+
+.item7 {
+  grid-area: Gitem7; }
+
+.item8 {
+  grid-area: Gitem8; }
+
+.soge-resultater {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 20px;
+  grid-template-areas: "Gvis-resultat Gvisresultat" "Gitem1 Gitem2" "Gitem3 Gitem4" "Gitem5 Gitem6" "Gitem7 Gitem8"; }
+
+.item-tekst h4 {
+  padding: 0 0 0 15px; }
+.item-tekst p {
+  padding: 0 0 0 15px; }
+.item-tekst button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%; }
+
+.items {
+  padding: 0 0 15px 0;
+  margin-bottom: 20px;
+  background-color: #f2f2f2; }
+
 @media screen and (min-width: 740px) {
+  .sec-annonce {
+    padding: 0 120px 25px 120px; }
+
   .formular {
-    padding: 0 70px 25px 60px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-column-gap: 20px;
-    grid-template-areas: "GFsec1 GFsec1" "GFsec2 GFsec3" "GFsec4 GFsec5" "GFsec6 GFsec6" "GFsec7 GFSec7"; }
+    grid-template-areas: "GFsec1 GFsec1" "GFsec2 GFsec3" "GFsec4 GFsec5" "GFsec6 GFsec6" "GFsec7 GFsec7"; }
 
   h1 {
-    padding: 0 0 0 60px; }
+    padding: 0 0 0 125px; }
 
-  .forsidesog {
-    height: 70%; }
-
-  .søgefeltforside #søgefelt {
-    width: 25rem; } }
+  .soge-resultater {
+    padding: 0 80px 0 40px;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+    grid-template-areas: "Gvis-resultat Gvisresultat Gvisresultat Gvisresultat" "Gitem1 Gitem2 Gitem3 Gitem4" "Gitem5 Gitem6 Gitem7 Gitem8"; } }
 @media screen and (min-width: 1100px) {
+  .soge-resultater {
+    padding: 0 200px 0 150px; }
+
   h1 {
-    padding: 0 0 0 120px; }
+    padding: 0 0 0 240px; }
 
   .formular {
     padding: 0 70px 25px 120px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-column-gap: 20px;
-    grid-template-areas: "GFsec1 GFsec1 . ." "GFsec2 GFsec3 . ." "GFsec4 GFsec5 . ." "GFsec6 GFsec6 . ." "GFsec7 GFSec7 . ."; }
+    grid-template-areas: "GFsec1 GFsec1 . ." "GFsec2 GFsec3 . ." "GFsec4 GFsec5 . ." "GFsec6 GFsec6 . ." "GFsec7 GFsec7 . ."; }
 
   .menunav .logo img {
     width: 50%; }
